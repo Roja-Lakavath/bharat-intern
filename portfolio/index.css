@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: beige;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: beige;
+    }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+
+nav {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 30px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+.detail {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detail h1 {
+    font-size: 50px;
+    color: black;
+    margin-left: 20px;
+}
+
+.detail p {
+    color: black;
+    line-height: 22px;
+}
+
+.detail span {
+    color: orange;
+}
+
+
+
+.image {
+    width: 45%;
+    height: 80%;
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+}
+
+.image img {
+    height: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 3%0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.home{
+    width: 600px;
+    height:200px;
+    background-color: aquamarine;
+    color: blueviolet;
+    margin-left: 20px;
+}
+.home h2 {
+    text-align: center;
+    font-size: 50px;
+}
+.home p{
+    text-align: center;
+    font-size: 50px;
+}
+.about{
+    margin-left: 20px;
+    width: 600px;
+    height: 150px;
+    background-color: aqua;
+    color: black;
+
+}
+.about h2{
+    text-align: center;
+}
+.about p{
+    padding: 10px;
+}
+.education{
+    margin-left: 20px;
+    width: 600px ;
+    height: 450px;
+    background-color: bisque;
+    color: brown;
+}
+.education h2{
+   text-align: center;
+}
+.education li{
+    padding: 5px;
+    margin-left: 250px;
+}
+.projects{
+    margin-left: 20px;
+    width:600px ;
+    height:300px ;
+    background-color: blanchedalmond;
+    color: blueviolet;
+}
+.projects h2{
+    text-align: center;
+}
+.projects li{
+ margin-left: 100px;
+padding: 7px;
+}
+
+.contact{
+    width: 600px;
+    height: 300px;
+    background-color: cadetblue;
+    color: #ff0000;
+    margin-left: 20px;
+}
+.contact h2{
+    text-align: center;
+}
+
+.download {
+    display: flex;
+    padding: 20px;
+}
+
+.download h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 90%;
+    }
+
+    .image {
+        width: 100%;
+        position: static;
+    }
+
+    .detail {
+        margin-left: 0;
+    }
+}
